@@ -1,0 +1,506 @@
+@media(max-width: 1279px) {
+	._container {
+		padding-right: 30px;
+    	padding-left: 30px;
+	}
+	.header {
+		margin-top: 30px;
+		margin-bottom: 30px
+	}
+	.main-block{
+        &__container {
+		    padding-top: 150px;
+	    }
+        &__boddy {
+            padding-top: 0px; 
+        }
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 100px;
+        }
+        &__boddy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title-container {
+            width: 100%;
+        }
+        &__image {
+            width: 569px;
+            height: 593px;
+        }
+        &__image-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }     
+    }
+	
+	.about-block {
+        &__contariner {
+		    flex-direction: column-reverse;
+		    row-gap: 80px;
+	    }
+        &__body {
+            margin: 0 auto;
+        }
+    }
+
+	.cart__3 {
+		display: none;
+	}
+    .wrapper {
+        &__pets-body {
+            width: 580px;
+        }
+    }
+
+    @keyframes move-right {
+        from {left: -620px;}
+        to {left: -1240px}
+    } 
+    .transition-right {
+        animation-name: move-right;
+        animation-duration: 2s;
+    } 
+    @keyframes move-left {
+        from {left: -620px;}
+        to {left: -0px}
+    }  
+    .transition-left {
+        animation-name: move-left;
+        animation-duration: 2s;
+    }
+    ._unact-1 {
+        display: none;
+    }
+	.pets-body{
+        &__carts-container {
+		    gap: 40px;
+            left: -620px;
+	    }
+        &__item {
+            gap: 40px;
+        }
+        
+    }
+	.help-block {
+        &__body {
+		    max-width: 630px;
+		    min-height: 448px;
+		    column-gap: 60px;
+            align-content: flex-start;
+	    }
+        &__list {
+            width: 170px;
+            height: 113px;
+        }
+    }
+	.donation-block {
+        &__box {
+		    flex-direction: column-reverse;
+		    row-gap: 60px;
+	    }
+    }
+	.footer{
+        &__container {
+		    justify-content: center;
+		    flex-wrap: wrap;
+		    row-gap: 65px;
+            column-gap: 60px;
+            padding-top: 15px;
+	    }
+    }
+}
+
+@media(max-width:767px) {
+   
+    ._container {
+        padding-right: 10px;
+    	padding-left: 10px;
+    }
+    .header {
+        &__container {
+            justify-content: space-between;
+        }
+        &__logo-container {
+
+        }
+    }
+    .menu {
+        &__list {
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            background-color: #292929;
+            padding: 252px 39px 248px;
+            transition: right 0.3s ease 0s;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: nowrap;
+            gap: 40px;
+            &._active {
+                right: 0;
+            }
+        }
+        &__item {
+            padding: 0;
+        }
+        &__link {
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 160%;
+            color: #CDCDCD;
+        }
+    }
+    .main-block {
+        &__container {
+        row-gap: 79px;
+        }
+        &__title-container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        &__title {
+            font-size: 25px;
+            max-width: 300px;
+            padding: 0 34px;
+            letter-spacing: 0.06em;
+        }
+        &__text {
+            text-align: center;
+            max-width: 300px;
+        }
+        &__image {
+            width: 260px;
+            height: 271.77px;
+        }
+    }
+    
+    .burger {
+        &__menu {
+            display: block;
+        }
+    } 
+    .about-block {
+        &__contariner {
+            padding-top: 42px;
+            row-gap: 42px;
+            padding-bottom: 42px;
+        }
+        &__title {
+            font-size: 25px;
+            text-align: center;
+            padding: 0 4px;
+        }
+        &__text {
+            text-align: justify;
+            padding: 23px 15px 0px;
+        }
+        &__image {
+            width: 260px;
+            height: 353.6px;
+            left: 0;
+        }
+    }
+    
+    .wrapper {
+        &__pets-body {
+            width: 270px;
+        }
+    }
+    .pets-block {
+        &__title {
+            font-size: 25px;
+            margin: 42px auto 41px;
+        }
+        &__body {
+            column-gap: 80px;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 20px;
+        }
+        &__buttons {
+            margin: 42px auto 42px;
+        }
+    }
+    ._unact-2 {
+        display: none;
+    }
+    @keyframes move-right {
+        from {left: -270px;}
+        to {left: -540px}
+    } 
+    .transition-right {
+        animation-name: move-right;
+        animation-duration: 2s;
+    } 
+    @keyframes move-left {
+        from {left: -270px;}
+        to {left: -0px}
+    }  
+    .transition-left {
+        animation-name: move-left;
+        animation-duration: 2s;
+    }
+    .pets-body {
+        &__buttons {
+            order: 1;
+        }
+        &__carts-container {
+            gap: 0;
+            left: -270px;
+        }
+        &__item {
+            gap: 0;
+        }
+    }
+
+    .help-block {
+        &__container {
+            padding: 29px 15px 42px;
+        }
+        &__title {
+            font-size: 25px;
+            max-width: 222px;
+        }
+        &__list {
+            width: 130px;
+            height: 87px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: space-around;
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__body {
+            gap: 30px;
+            margin-top: 30px;
+            justify-content: space-between;
+        }
+    }
+    .help-list { 
+        &__text {
+            font-size: 15px;
+            margin-top: 12px;
+        }
+    }
+    .donation-block { 
+        &__box {
+            padding-top: 41px;
+            row-gap: 43px;
+            padding-bottom: 41px;
+        }
+        &__title {
+            font-size: 25px;
+            text-align: center;
+            padding: 0 36px;
+        }
+        &__button {
+            font-size: 15px;
+            letter-spacing: 0.06em;
+            
+        }
+        &__buttons {
+            width: 281px;
+        }
+        &__about {
+            text-align: center;
+            font-size: 15px;
+            letter-spacing: 0;
+        }
+        &__body {
+            align-items: center;
+            row-gap: 23px;
+            max-height: 330px;
+        }
+        &__text {
+            text-align: justify;
+            padding: 0 10px;
+            margin-top: -3px;
+        }
+        &__image {
+            height: 135px;
+            width: 260px;
+        }
+        &__button-text {
+            display: flex;
+        }
+    }
+    
+    svg {
+        .credit-cart {
+            width: 30px;
+            height: 23px;
+        }
+    }
+
+    .credit-cart {
+        &__container {
+            margin-left: 15px;
+            display: flex;
+        }
+    }
+    
+    .footer{
+        &__container {
+            padding-top: 14px;
+            row-gap: 43px;
+            flex-direction: column;
+        }
+        &__body-1, &__body-2 {
+            height: 212px;
+        }
+        &__body-2 {
+            margin-top: 0;
+            row-gap: 39px;
+            justify-content: center;
+        }
+        &__image {
+            width: 260px;
+            height: 269px;
+        }
+    }
+    
+    .body-1 { 
+        &__title {
+            font-size: 25px;
+            text-align: center;
+            padding: 0 15px;
+        }
+        &__email,
+        &__phone {
+            justify-content: center;
+        }
+    }
+    .body-2 { 
+        &__title {
+            font-size: 25px;
+            text-align: center;
+            padding: 0 15px;
+        }
+    }   
+}
+
+@media (min-width:420px) {
+    .pets-body {
+        &__buttons {
+        order: 0;
+        }
+    }
+    .pets-block {
+        &__body {
+        column-gap: 10px;
+        }
+    }
+}
+
+@media (min-height: 180px) and (max-height: 560px) {
+	.menu {
+        &__list {
+            gap: 10px;
+        }
+    }
+}
+
+@media (min-height: 180px) and (max-height: 360px) {
+	.menu {
+        &__list {
+            gap: 10px;
+            overflow: auto;
+            &::before {
+                content: "";
+                position: fixed;
+                background-color: #292929;
+                top: 0;
+                width: 320px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .header {
+        .unactive-logo {
+            display: none;
+        }
+        &__menu {
+            .active-logo {
+                top: 30px;
+                right: 124px;
+                transition: right 0.3s ease 0s;
+            }
+        }
+    }
+}
+@media (min-width:375px) and (max-width:767px) {
+    .header {
+        &__logo-container {
+            position: absolute;
+        }
+    }
+    .menu {
+        &__list {
+            max-width: 320px;
+            // &._active {
+			// 	&::before {
+			// 		left: 55px;
+			// 		max-width: calc(100% - 55px);
+			// 		height: 120px;
+            //         transform: 2s;
+			// 	}
+			// }
+        }
+    }
+}
+
+@media (max-width:319px) {
+    .main-block {
+        &__text {
+            max-width: 240px;
+        }
+    }
+    .burger {
+        &__menu {
+            right: 0;
+        }
+    }
+    .help-block {
+        &__body {
+            flex-direction: column;
+        }
+    }
+    .donation-block {
+        &__buttons {
+            width: 230px;
+            font-size: 12px;
+        }
+        &__text {
+            max-width: 240px;
+        }
+        &__about {
+            font-size: 13px;
+        }
+    }
+   
+    .adress {
+        &__link {
+            text-align: start;
+        }
+    }
+}
